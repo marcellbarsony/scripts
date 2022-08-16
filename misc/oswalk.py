@@ -4,8 +4,6 @@ import os
 
 path = os.getcwd()
 
-print(os.listdir(path))
-
 for dirpath, dirname, files, in (os.walk(path)):
     print(f"Dirpath: {dirpath}" )
     print(f"Dirnames: {dirname}" )
