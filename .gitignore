@@ -1,7 +1,9 @@
+# Cache
 .cache/*
-*.pyc
-*.pyo
 __pycache__/
-pip_log.txt
-pip-delete-this-directory.txt
+
+# Test file
 test.py
+
+# Pip logs
+pip_log.txt
