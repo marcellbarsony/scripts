@@ -1,2 +1,7 @@
 .cache/*
-malware/ransomware/__pycache__/
+*.pyc
+*.pyo
+__pycache__/
+pip_log.txt
+pip-delete-this-directory.txt
+

@@ -26,4 +26,3 @@ def tree_structure():
                  file.write("Test")
 
     create_dirs()
-
