@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-# Import
 import os
 from cryptography.fernet import Fernet
 
@@ -9,7 +8,7 @@ cwd = os.getcwd()
 main_dir = "test"
 rootdir = os.path.join(cwd, main_dir)
 
-# Iterate
+# Iterate directories
 files = []
 
 for dirpath, _, file in os.walk(rootdir):
@@ -20,7 +19,7 @@ for dirpath, _, file in os.walk(rootdir):
 with open ("key.txt", "rb") as thekey:
     secretkey = thekey.read()
 
-# Decryption
+# Decrypt proc
 for file in files:
     with open(file, "rb") as thefile:
         content = thefile.read()
@@ -29,4 +28,4 @@ for file in files:
         thefile.write(content_decrypted)
 
 #if __name__ == "__main__":
-#    keygen()
+#    main()

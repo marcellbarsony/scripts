@@ -27,6 +27,6 @@ def tree_structure():
     def create_files():
         for subdir, _, _ in os.walk(rootdir):
             with open(os.path.join(subdir, filename), "w") as file:
-                 file.write("Test")
+                 file.write("This is the content of the file")
 
     create_dirs()
