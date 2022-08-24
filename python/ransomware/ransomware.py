@@ -14,7 +14,8 @@ testdirs.tree_structure()
 
 # Fernet: Keygen
 def keygen():
-    global key = Fernet.generate_key()
+    global key
+    key = Fernet.generate_key()
     with open("key.txt", "wb") as keyfile:
         keyfile.write(key)
 
