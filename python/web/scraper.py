@@ -26,4 +26,5 @@ for item in soup.select('img'):
     print(image_url)
     print(type(image_url))
 
-
+if __name__ == '__main__':
+    main()
