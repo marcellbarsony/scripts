@@ -5,5 +5,8 @@ __pycache__/
 # Test file
 test.py
 
+#Virtualenvironment
+venv/
+
 # Pip logs
 pip_log.txt
