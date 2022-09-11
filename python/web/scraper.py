@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-# Dependencies:
-# bs4
-# lxml
+# Dependencies: bs4, lxml
 
 import bs4
 import requests

@@ -24,11 +24,11 @@ def scan(ip, mac):
     # Send & Capture packet
     # Requires 'sudo -E' to preserve environment
     # https://python-forum.io/thread-36293.html
-    #ans, unans = scapy.srp(arp_request_broadcast, timeout=1)
-    ans = scapy.srp(arp_request_broadcast, timeout=1)[0]
+    ans = scapy.srp(arp_request_broadcast, timeout=1, verbose=False)[0]
+
+    print("IP\t\t\tMAC Address")
     for element in ans:
-        print(element)
-        print("-----")
+        print(element[1].psrc + "\t\t" + element[1].hwsrc)
     #print(ans.summary())
 
     # Show
