@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#
+# Usage:
+# sudo mac_changer.py -i enp0s3 -m 11:11:11:11:11:11
 
 import optparse
 import os
