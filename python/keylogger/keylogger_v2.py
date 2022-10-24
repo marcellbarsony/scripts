@@ -8,7 +8,7 @@ logfile_dir = ""
 
 # Log format
 logging.basicConfig(
-        filename=(logfile_dir + "keypress.log"),
+        filename=(logfile_dir + "key.log"),
         level=logging.DEBUG,
         format='%(asctime)s - %(message)s'
         )
