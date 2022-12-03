@@ -13,7 +13,8 @@ sb="#F243FF"
 sf="#000000"
 px=28
 
-select=$(printf "Cancel\nShutdown\nReboot\nKill_X11" | dmenu -i --nb $nb --nf $nf --sb $sb --sf $sf --render_minheight $px -p "$prompt")
+#select=$(printf "Cancel\nShutdown\nReboot\nKill_X11" | dmenu -i --nb $nb --nf $nf --sb $sb --sf $sf --render_minheight $px -p "$prompt")
+select=$(printf "Cancel\nShutdown\nReboot\nKill_X11" | rofi -dmenu )
 
 if [ "$select" = "Shutdown" ]; then
     $scenario1

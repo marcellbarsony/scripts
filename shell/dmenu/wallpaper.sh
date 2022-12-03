@@ -4,7 +4,7 @@
 
 # Variables
 prompt="Wallpaper"
-wpdir="$HOME/Pictures/Wallpapers"
+wpdir="$HOME/Documents/Wallpapers"
 scenario2="echo Next wallpaper"
 
 # dmenu-rs theme
@@ -15,7 +15,8 @@ sf="#000000"
 px="28"
 
 
-select=$(printf "Random\nNext" | dmenu -i --nb $nb --nf $nf --sb $sb --sf $sf --render_minheight $px -p "$prompt")
+#select=$(printf "Random\nNext" | dmenu -i --nb $nb --nf $nf --sb $sb --sf $sf --render_minheight $px -p "$prompt")
+select=$(printf "Random\nNext" | rofi -show run)
 
 if [ "$select" = "Random" ]; then
 
