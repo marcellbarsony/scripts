@@ -4,9 +4,10 @@ import netfilterqueue
 import scapy.all as scapy
 
 # iptables -I INPUT -j NFQUEUE --queue-num 0
-# iptables -I OUTPUT -j 
+# iptables -I OUTPUT -j
 
 ack_list = []
+
 
 def set_load(packet, load):
     packet[scapy.Raw].load = load
@@ -14,6 +15,7 @@ def set_load(packet, load):
     del packet[scapy.IP].chksum
     del packet[scapy.TCP].chksum
     return packet
+
 
 def process_packet(packet):
     scapy_packet = scapy.IP(packet.get_payload())
@@ -27,7 +29,7 @@ def process_packet(packet):
 
     packet.accept()
 
+
 queue = netfilterqueue.NetfilterQueue()
 queue.bind(0, process_packet)
 queue.run
-

@@ -8,11 +8,13 @@ import os
 import re
 import subprocess
 
+
 def get_arguments():
     parser = optparse.OptionParser()
     parser.add_option("-i", "--interface", dest="interface", help="Interface to change MAC address")
     parser.add_option("-m", "--mac", dest="mac", help="New MAC address")
     return parser.parse_args()
+
 
 def test_arguments(interface, mac):
     if mac and interface:
@@ -26,11 +28,13 @@ def test_arguments(interface, mac):
         print("MAC or Interface is not defined.")
         exit()
 
+
 def change_mac(interface, mac):
     print(f"[+] {interface}: Changing MAC address >> {mac}")
     subprocess.run(["sudo", "ip", "link", "set", "dev", interface, "down"])
     subprocess.run(["sudo", "ip", "link", "set", "dev", interface, "address", mac])
     subprocess.run(["sudo", "ip", "link", "set", "dev", interface, "up"])
+
 
 def get_mac(interface):
     ip_addr_result = subprocess.check_output(["ip", "link", "show", "dev", interface])
@@ -42,6 +46,7 @@ def get_mac(interface):
         print("[-] Could not read MAC address.")
         exit()
 
+
 os.system('cls' if os.name == 'nt' else 'clear')
 (options, arguments) = get_arguments()
 test_arguments(options.interface, options.mac)
@@ -52,4 +57,3 @@ if current_mac == options.mac:
     print(f"[+] {options.interface}: MAC address was successfully changed.")
 else:
     print(f"[-] MAC address cannot be changed to {current_mac}")
-

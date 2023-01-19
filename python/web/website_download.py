@@ -2,11 +2,12 @@
 
 import requests
 
+
 def download(url):
     response = requests.get(url)
-    #print(response.content)
+    # print(response.content)
     with open("response.txt", "w") as file:
-        file.write(response)
+        file.write(str(response))
 
 
 download("https://wikipedia.com/")

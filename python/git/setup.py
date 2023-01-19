@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Author  : John Doe <jdoe@domain.com>
+Author  : Marcell Barsony <mail@domain.com>
 Date    : 2022-01-01
 """
 
@@ -8,42 +8,36 @@ import argparse
 import os
 import sys
 
+
 def main(args):
-    print(args.file, args.count, args.verbose)
+
+    project = args.arg
+
+    if os.path.isfile(project):
+        print(f'{project} is a file')
+        exit()
+
+    if not os.path.exists(project):
+        os.mkdir(project)
+
+    os.chdir(project)
+    print(os.getcwd())
+
+    # git remote add origin https://github.com/marcellbarsony/{args.arg}.git
+
 
 if __name__ == '__main__':
     """ Initialize argparse """
 
     parser = argparse.ArgumentParser(
-                        prog = 'Program-Name',
-                        description = 'Program description',
-                        epilog = 'Text at the bottom of help')
+                        prog='GitInit',
+                        description='Initialize GitHub repository')
 
-    # Required positional argument
-    parser.add_argument('file',
-                        choices=['foo', 'bar'],
-                        default=[sys.stdin],
+    # Project name
+    parser.add_argument('arg',
                         help='Positional argument',
                         nargs='?',
-                        type=argparse.FileType('w'))
-
-    # Optional flag (Int)
-    parser.add_argument('-c',
-                        choices=range(1, 10),
-                        default=3,
-                        help='Store value',
-                        metavar='',
-                        required=True,
-                        type=int)
-
-    # Optional flag (True/False)
-    parser.add_argument('-v', '--verbose',
-                        action='store_true',
-                        help='True/False')
-
-    # Group
-    #group = parser.add_m
+                        metavar='')
 
     args = parser.parse_args()
     main(args)
-

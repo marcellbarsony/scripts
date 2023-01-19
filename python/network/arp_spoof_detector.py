@@ -2,7 +2,8 @@
 
 import scapy.all as scapy
 
-interface="enp0s3"
+interface = "enp0s3"
+
 
 def get_mac(ip):
     arp_request = scapy.ARP(pdst=ip)
@@ -11,8 +12,10 @@ def get_mac(ip):
     answered_list = scapy.srp(arp_request_broadcast, timeout=1, verbose=False)[0]
     return answered_list[0][1].hwsrc
 
+
 def sniff(interface):
     scapy.sniff(iface=interface, store=False, prn=process_captured_pkt)
+
 
 def process_captured_pkt(packet):
     if packet.haslayer(scapy.ARP) and packet[scapy.ARP].op == 2:
@@ -25,5 +28,6 @@ def process_captured_pkt(packet):
                 print(packet.show())
         except IndexError:
             pass
+
 
 sniff(interface)
