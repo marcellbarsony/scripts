@@ -2,8 +2,9 @@
 .cache/*
 __pycache__/
 
-# Test file
-test.py
+# Test
+test.*
+test/*
 
 #Virtualenvironment
 venv/
