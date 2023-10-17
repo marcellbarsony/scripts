@@ -42,4 +42,3 @@ impl Config {
         Ok(Config { query, filename })
     }
 }
-
