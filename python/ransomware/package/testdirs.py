@@ -14,13 +14,13 @@ def tree_structure():
     def create_dirs():
         os.makedirs(rootdir, exist_ok=True)
         # Layer 1
-        for dir in directories:
-            layer1 = os.path.join(rootdir, dir)
-            os.makedirs(layer1, exist_ok=True)
-            # Layer 2
-            for dir in directories:
-                layer2 = os.path.join(layer1, dir)
-                os.makedirs(layer2, exist_ok=True)
+#        for dir in directories:
+#            layer1 = os.path.join(rootdir, dir)
+#            os.makedirs(layer1, exist_ok=True)
+#            # Layer 2
+#            for dir in directories:
+#                layer2 = os.path.join(layer1, dir)
+#                os.makedirs(layer2, exist_ok=True)
         create_files()
 
     # Files
