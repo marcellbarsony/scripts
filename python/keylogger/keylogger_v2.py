@@ -10,7 +10,7 @@ logfile_dir = ""
 logging.basicConfig(
         filename=(logfile_dir + "key.log"),
         level=logging.DEBUG,
-        format='%(asctime)s - %(message)s'
+        format="%(asctime)s - %(message)s"
         )
 
 
