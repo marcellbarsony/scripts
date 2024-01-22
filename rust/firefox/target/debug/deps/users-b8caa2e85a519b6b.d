@@ -1,0 +1,10 @@
+/home/marci/.local/git/scripts/rust/firefox/target/debug/deps/users-b8caa2e85a519b6b.rmeta: /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/lib.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/base.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/cache.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/mock.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/switch.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/traits.rs
+
+/home/marci/.local/git/scripts/rust/firefox/target/debug/deps/users-b8caa2e85a519b6b.d: /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/lib.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/base.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/cache.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/mock.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/switch.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/traits.rs
+
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/lib.rs:
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/base.rs:
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/cache.rs:
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/mock.rs:
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/switch.rs:
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/users-0.11.0/src/traits.rs:

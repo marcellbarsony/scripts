@@ -1,0 +1,17 @@
+###########################################################################
+# libssh2 installation details
+###########################################################################
+
+prefix=/home/marci/.local/git/scripts/rust/firefox/target/debug/build/libssh2-sys-a4ba875f91f4d2d1/out
+exec_prefix=
+libdir=/home/marci/.local/git/scripts/rust/firefox/target/debug/build/libssh2-sys-a4ba875f91f4d2d1/out/lib
+includedir=/home/marci/.local/git/scripts/rust/firefox/target/debug/build/libssh2-sys-a4ba875f91f4d2d1/out/include
+
+Name: libssh2
+URL: https://www.libssh2.org/
+Description: Library for SSH-based communication
+Version: 1.10.1_DEV
+Requires.private: 
+Libs: -L${libdir} -lssh2 
+Libs.private: 
+Cflags: -I${includedir}

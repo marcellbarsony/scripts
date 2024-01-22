@@ -16,7 +16,6 @@ impl Object {
 
 fn main() {
     std::fs::write("foo.txt", "Lorem ipsum").unwrap();
-
     let mut object1 = Object {
         num: 30,
         string: String::from("Heap"),
