@@ -1,1 +1,0 @@
-/home/marci/.local/git/scripts/rust/test/target/debug/teszt: /home/marci/.local/git/scripts/rust/test/src/foo/another.rs /home/marci/.local/git/scripts/rust/test/src/foo/mod.rs /home/marci/.local/git/scripts/rust/test/src/main.rs

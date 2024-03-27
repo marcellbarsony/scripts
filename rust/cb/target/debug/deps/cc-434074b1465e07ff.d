@@ -1,0 +1,11 @@
+/home/marci/.local/git/scripts/rust/cb/target/debug/deps/cc-434074b1465e07ff.rmeta: /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/lib.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/windows/mod.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/windows/find_tools.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/command_helpers.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/tool.rs
+
+/home/marci/.local/git/scripts/rust/cb/target/debug/deps/libcc-434074b1465e07ff.rlib: /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/lib.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/windows/mod.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/windows/find_tools.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/command_helpers.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/tool.rs
+
+/home/marci/.local/git/scripts/rust/cb/target/debug/deps/cc-434074b1465e07ff.d: /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/lib.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/windows/mod.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/windows/find_tools.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/command_helpers.rs /home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/tool.rs
+
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/lib.rs:
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/windows/mod.rs:
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/windows/find_tools.rs:
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/command_helpers.rs:
+/home/marci/.local/share/cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.90/src/tool.rs:
